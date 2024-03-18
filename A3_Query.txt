@@ -1,0 +1,26 @@
+Dyal Sehra
+101042059
+
+//To create table use the following query: 
+
+create table students
+	(student_id		SERIAL PRIMARY KEY, 
+	 first_name	    TEXT not null, 
+	 last_name		TEXT not null, 
+	 email		    TEXT not null UNIQUE,
+	 enrollment_date  DATE
+	);
+
+//To populate table use the following query: 
+
+INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
+('John', 'Doe', 'john.doe@example.com', '2023-09-01'),
+('Jane', 'Smith', 'jane.smith@example.com', '2023-09-01'),
+('Jim', 'Beam', 'jim.beam@example.com', '2023-09-02');
+
+
+//To view Table use the following query: 
+
+SELECT first_name, last_name, email, enrollment_date
+FROM students
+
